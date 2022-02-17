@@ -33,11 +33,26 @@
       <div class="row flex-grow-1">
         <div class="col-2 bg-secondary">
           <h4 class="selectable p-2" onclick="app.carsController.viewCars()">Cars</h4>
-          <h4 class="selectable p-2">Houses</h4>
+          <h4 class="selectable p-2"onclick="app.housesController.viewHouses()">Houses</h4>
           <h4 class="selectable p-2">Jobs</h4>
         </div>
         <div class="col-10">
           <div class="row p-2" id="listings">
+            
+            <!-- HOUSE TEMPLATE -->
+            <!-- <div class="col-md-4">
+              <div class="bg-white rounded shadow">
+                <img class="img-fluid rounded-top" src="https://thiscatdoesnotexist.com" alt="house-image">
+                <div class="p-3">
+                  <p>Bedrooms</p>
+                  <p>Bathrooms</p>
+                  <p>Square Footage</p>
+                  <p>Year</p>
+                  <p>Price</p>
+                </div>
+              </div>
+            </div> -->
+            <!-- end of house template -->
             <!-- CAR TEMPLATE -->
             <!-- <div class="col-md-4">
               <div class="bg-white rounded shadow">
@@ -54,6 +69,35 @@
             </div> -->
             <!-- END OF TEMPLATE -->
           </div>
+          <!-- <form class="row" onsubmit="app.housesController.createHouse(event)">
+            <h3 class="col-12">Create a House</h3>
+            <div class="mb-3 col-5">
+              <label for="" class="form-label">Bedrooms</label>
+              <input required type="text" class="form-control" name="bedrooms" id="bedrooms" aria-describedby="helpId" placeholder="">
+            </div>
+              <div class="mb-3 col-6">
+                <label for="" class="form-label">Bathrooms</label>
+                <input required type="text" class="form-control" name="bathrooms" id="bathrooms" aria-describedby="helpId" placeholder="">
+               </div>
+              <div class="mb-3 col-6">
+                <label for="" class="form-label">Square Footage</label>
+                <input required type="text" class="form-control" name="sqFootage" id="sqFootage" aria-describedby="helpId" placeholder="">
+                </div>
+                <div class="mb-3 col-6">
+                  <label for="" class="form-label">Year</label>
+                  <input required type="text" class="form-control" name="year" id="year" aria-describedby="helpId" placeholder="">
+                </div>
+                <div class="mb-3 col-6">
+                  <label for="" class="form-label">Price</label>
+                  <input required type="text" class="form-control" name="price" id="price" aria-describedby="helpId" placeholder="">
+                </div>
+                <div class="mb-3 col-6">
+                  <label for="" class="form-label">Image Url</label>
+                  <input required type="text" class="form-control" name="imgUrl" id="imgUrl" aria-describedby="helpId" placeholder="">
+                </div>
+                <button class="col-4 offset-8 btn btn-success"> Create</button>
+          </form> -->
+          
           <!-- THIS IS MY FORM -->
 
 
